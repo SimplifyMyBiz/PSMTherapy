@@ -13,11 +13,11 @@ $(window).scroll(function() {
 
 
 $(window).resize(function(){
-	if ($(window).width() < 976){	
+	if ($(window).width() < 976){
 		$('.navbar-collapse a').click(function (e) {
 			$('.navbar-collapse').collapse('toggle');
 		});
-	}	
+	}
 });
 
 
@@ -39,20 +39,20 @@ $(function() {
 
 // ****************************************************************
 // owl-caurosel
-// ****************************************************************			
-			
+// ****************************************************************
+
 $(document).ready(function() {
- 
+
 	$("#featured-list").owlCarousel({
- 
+
 		items : 4, //4 items above 1000px browser width
 		itemsDesktop : [1000,4], //4 items between 1000px and 901px
 		itemsDesktopSmall : [900,2], // betweem 900px and 601px
 		itemsTablet: [600,1], //1 items between 600 and 0
 		itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
-	  
+
 	});
-   
+
 });
 
 
@@ -62,7 +62,7 @@ $(document).ready(function() {
 
 $(document).ready(function(){
 	$().UItoTop({ easingType: 'easeOutQuart' });
-});	
+});
 
 
 // ***********************************
@@ -88,26 +88,26 @@ $(document).ready(function(){
   });
 });
 
-	
+
 // ***********************************
 // Backstretch - Slider on Background
 //
 //  Note :  make sure  use this  http://bootstrapwizard.info/Theme/Fullscreen/images/bg4.jpg"  when on server  but you can simply use  "images/bg1.jpg"  if you are on localhost
 //
-// ***********************************								  
-			 
-$("body.bg-slider").backstretch([
-   "images/bg7.jpg",
-   "images/bg8.jpg",
-   "images/bg9.jpg",
-], {duration: 5000, fade: 1000});
-							  
+// ***********************************
 
-							  				  
+$("body.bg-slider").backstretch([
+   "images/elkbg.jpg",
+   "images/elkbg.jpg",
+   "images/elkbg.jpg",
+], {duration: 5000, fade: 1000});
+
+
+
 
 // ***********************************
 // magnificPopup
-// ***********************************	
+// ***********************************
 
 $('.gallery-item').magnificPopup({
   type: 'image',
@@ -120,8 +120,8 @@ $('.gallery-item').magnificPopup({
 
 // ****************************************************************
 // wow - for animation together with animate.css
-// ****************************************************************	
-	
+// ****************************************************************
+
 $(document).ready(function(){
 	wow = new WOW(
 	  {
@@ -138,7 +138,7 @@ $(document).ready(function(){
 // ****************************************************************
 
 $(document).ready(function( $ ) {
-	if($("span.count").length > 0){	
+	if($("span.count").length > 0){
 		$('span.count').counterUp({
 			delay: 10, // the delay time in ms
 			time: 1000 // the speed time in ms
@@ -150,15 +150,15 @@ $(document).ready(function( $ ) {
 
 // ****************************************************************
 // Form Validation  -  Contact Form
-// ****************************************************************			
-		
+// ****************************************************************
+
 /*
 	Jquery Validation using jqBootstrapValidation
-   example is taken from jqBootstrapValidation docs 
+   example is taken from jqBootstrapValidation docs
   */
- 
- 
-  
+
+
+
 $(function() {
 
     $("input,textarea").jqBootstrapValidation({
@@ -236,14 +236,14 @@ $('#name').focus(function() {
 
 // ****************************************************************
 // Form Validation  -  Subscribe Form
-// ****************************************************************			
-		
+// ****************************************************************
+
 /*
 	Jquery Validation using jqBootstrapValidation
-   example is taken from jqBootstrapValidation docs 
+   example is taken from jqBootstrapValidation docs
   */
- 
-  
+
+
 $(function() {
 
     $("input").jqBootstrapValidation({
@@ -308,27 +308,3 @@ $(function() {
 $('#email_subscribe').focus(function() {
     $('#SubscribeForm #success_newsletter').html('');
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-			
-		
-
-
